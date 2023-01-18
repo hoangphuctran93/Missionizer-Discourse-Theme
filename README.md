@@ -26,8 +26,10 @@ Giao diện được thiết kế và custom từ [Discourse Air Theme](https://
 * [Auto linkify words][def]
 * [Category Headers theme component][def2]
 * [Category Icons][def3]
+* [Category List Banners][def4]
 ## Plugin hiện đang sử dụng
 
 [def]: https://meta.discourse.org/t/linkify-words-in-post-theme-component/82193
 [def2]: https://meta.discourse.org/t/discourse-category-headers-theme-component/148682
 [def3]: https://meta.discourse.org/t/category-icons/104683
+[def4]: https://meta.discourse.org/t/category-list-with-banners/201280
