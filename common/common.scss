@@ -258,3 +258,11 @@ blockquote p{
     }
     }
 }
+tr.topic-list-item-separator {
+    padding: 10px 0;
+    box-shadow: none;
+    background-color: #F9FCFF;
+}
+tr.topic-list-item-separator td.topic-list-item-separator{
+    width: 100%
+}
