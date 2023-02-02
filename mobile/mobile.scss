@@ -137,3 +137,6 @@ html:not(.anon) #topic-progress-wrapper:not(.docked){
 .topic-list-data .pull-left{
     padding: 5px;
 }
+tr.topic-list-item-separator td.topic-list-data{
+    max-width: none !important;
+}
