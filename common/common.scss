@@ -184,6 +184,9 @@ blockquote p{
 .navigation-controls > .btn-default.btn,.select-kit.single-select.dropdown-select-box{
     margin-left: 5px;
 }
+#list-area .show-more .alert {
+    border-radius: 5px 5px 0px 0px;
+}
 .topic-list .topic-list-header tr{
     min-height: 58px;
     & th:first-child{
