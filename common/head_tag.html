@@ -3,7 +3,7 @@
     const copyListener = (event) => {
   const range = window.getSelection().getRangeAt(0),
     rangeContents = range.cloneContents(),
-    pageLink = `Read more at<br> Phúc: ${document.location.href}`,
+    pageLink = `Xem thêm tại: ${document.location.href}`,
     helper = document.createElement("div");
 
   helper.appendChild(rangeContents);
