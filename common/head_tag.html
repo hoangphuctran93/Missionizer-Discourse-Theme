@@ -1,1 +1,35 @@
 <div class="background-container"></div>
+<script>
+    const copyListener = (event) => {
+  const range = window.getSelection().getRangeAt(0),
+    rangeContents = range.cloneContents(),
+    pageLink = `Read more at: ${document.location.href}`,
+    helper = document.createElement("div");
+
+  helper.appendChild(rangeContents);
+
+  event.clipboardData.setData("text/plain", `${helper.innerText}\n${pageLink}`);
+  event.clipboardData.setData("text/html", `${helper.innerHTML}<br>${pageLink}`);
+  event.preventDefault();
+};
+document.addEventListener("copy", copyListener);
+</script>
+<style>
+    #richText {
+  width: 415px;
+  height: 70px;
+  border: 1px solid #777;
+  overflow: scroll;
+}
+
+#richText:empty:before {
+  content: "Paste your copied text here";
+  color: #888;
+}
+</style>
+<h4>Rich text:</h4>
+<p>Lorem <u>ipsum</u> dolor sit <b>amet</b>, consectetur <i>adipiscing</i> elit.</p>
+<h4>Plain text editor:</h4>
+<textarea name="textarea" rows="5" cols="50" placeholder="Paste your copied text here"></textarea>
+<h4>Rich text editor:</h4>
+<div id="richText" contenteditable="true"></div>
