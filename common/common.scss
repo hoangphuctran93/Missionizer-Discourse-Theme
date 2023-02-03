@@ -118,6 +118,9 @@ html .background-container{
     padding: 0 0 1rem 16px;
     color: #fff !important;
   }
+  & .category-4, .category-6, .category-18, .category-3{
+    border-radius: 10px 10px 0px;
+  }
 }
 td.latest{
     padding-right: 10px !important;
